@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.textView
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,17 +21,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun countMe(view: View) {
-        // Get the text view
-        val showCountView = findViewById(R.id.textView) as TextView
 
         // Get the value of the text view
-        val countString = showCountView.text.toString()
+        val countString = textView.text.toString()
 
         // Convert value to a number and increment it
         var count: Int = Integer.parseInt(countString)
         count++
 
         // Display the new value in the text view.
-        showCountView.text = count.toString()
+        textView.text = count.toString()
     }
 }
