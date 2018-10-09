@@ -24,6 +24,7 @@
 
     <Button
         android:id="@+id/toast_button"
+        android:onClick="toastMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -39,6 +40,7 @@
 
     <Button
         android:id="@+id/count_button"
+        android:onClick= "countMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
